@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Niharika | Policy & Economics Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+color:#2a2a2a;
+background:linear-gradient(-45deg,#ffd6ec,#e0f7ff,#fff0f5,#e9d5ff);
+background-size:400% 400%;
+animation:bg 18s ease infinite;
+overflow-x:hidden;
+position:relative;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* STICKERS */
+.sticker{
+position:fixed;
+font-size:28px;
+animation:float 6s ease-in-out infinite;
+opacity:0.8;
+pointer-events:none;
+}
+
+.s1{ top:15%; left:5%; }
+.s2{ top:70%; right:8%; animation-duration:8s; }
+.s3{ bottom:15%; left:10%; animation-duration:7s; }
+.s4{ top:40%; right:15%; animation-duration:9s; }
+.s5{ bottom:10%; right:5%; animation-duration:10s; }
+
+@keyframes float{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-20px);}
+100%{transform:translateY(0px);}
+}
+
+/* NAV */
+nav{
+position:fixed;
+width:100%;
+padding:20px 0;
+backdrop-filter:blur(20px);
+background:rgba(255,255,255,0.5);
+text-align:center;
+font-weight:600;
+letter-spacing:1px;
+z-index:1000;
+}
+
+nav a{
+margin:0 25px;
+text-decoration:none;
+color:#444;
+transition:0.3s;
+position:relative;
+}
+
+nav a::after{
+content:"";
+position:absolute;
+width:0%;
+height:2px;
+background:#ec4899;
+left:0;
+bottom:-6px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#a855f7;
+}
+
+nav a:hover::after{
+width:100%;
+}
+
+/* HERO */
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+header h1{
+font-family:'Playfair Display',serif;
+font-size:4.5rem;
+background:linear-gradient(to right,#a855f7,#ec4899,#f472b6);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+header p{
+margin-top:25px;
+font-size:1.2rem;
+max-width:650px;
+opacity:0.85;
+}
+
+.cta{
+margin-top:35px;
+padding:14px 28px;
+border:none;
+border-radius:50px;
+background:linear-gradient(135deg,#f472b6,#c084fc);
+color:white;
+font-weight:600;
+cursor:pointer;
+box-shadow:0 10px 30px rgba(236,72,153,0.4);
+transition:0.3s;
+}
+
+.cta:hover{
+transform:scale(1.08);
+}
+
+/* SECTIONS */
+section{
+padding:120px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+h2{
+font-family:'Playfair Display',serif;
+font-size:2.5rem;
+margin-bottom:50px;
+text-align:center;
+}
+
+/* CARDS */
+.card{
+background:rgba(255,255,255,0.75);
+backdrop-filter:blur(25px);
+padding:40px;
+border-radius:30px;
+margin-bottom:35px;
+box-shadow:0 20px 60px rgba(0,0,0,0.08);
+transition:0.4s;
+border:1px solid rgba(255,255,255,0.5);
+}
+
+.card:hover{
+transform:translateY(-12px) scale(1.02);
+box-shadow:0 30px 80px rgba(0,0,0,0.12);
+}
+
+/* SKILLS */
+.skills-list{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:18px;
+}
+
+.skill{
+padding:12px 24px;
+border-radius:50px;
+background:linear-gradient(135deg,#fbcfe8,#ddd6fe);
+font-weight:500;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.skill:hover{
+transform:scale(1.1);
+}
+
+footer{
+text-align:center;
+padding:60px;
+font-size:0.9rem;
+opacity:0.7;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- STICKERS -->
+<div class="sticker s1">💖</div>
+<div class="sticker s2">✨</div>
+<div class="sticker s3">🌸</div>
+<div class="sticker s4">📊</div>
+<div class="sticker s5">💼</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<header>
+<h1>Niharika</h1>
+<p>Economics Honors Student • Policy Researcher in Progress • Data Explorer  
+Building insight from numbers & impact from ideas.</p>
+<button class="cta">Let’s Connect 💌</button>
+</header>
+
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+Currently pursuing B.A. (Hons.) Economics at Manav Rachna International Institute of Research and Studies. I’m deeply interested in policy analysis, development economics, and understanding how data shapes governance decisions. 
+
+I enjoy working with datasets, evaluating economic indicators, and translating research into structured, real-world insights.
+</div>
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+<div class="card">
+<h3>Research Intern – MRCAWTM</h3>
+<p>Authored a policy report titled <strong>“Evaluating India’s Water Governance Framework.”</strong> Conducted multi-scheme analysis focusing on policy performance, public investment patterns, and governance effectiveness to assess implementation outcomes.</p>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="card">
+<h3>Educational Reforms & Rise of Skill-Based Education</h3>
+<p>Analyzed the transition from rote-based learning to skill-oriented education systems in India and examined its impact on employability and human capital formation.</p>
+</div>
+
+<div class="card">
+<h3>Economic Parameters – Madhya Pradesh</h3>
+<p>Conducted macroeconomic analysis using CMIE (States of India) datasets to evaluate sectoral growth, employment indicators, and overall development trends.</p>
+</div>
+
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills-list">
+<div class="skill">MS Excel & Data Analysis</div>
+<div class="skill">EViews • STATA • SPSS (Basic)</div>
+<div class="skill">Policy Research & Reporting</div>
+<div class="skill">AI-Based Research Tools</div>
+<div class="skill">Academic & Content Writing</div>
+<div class="skill">Team Collaboration</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="card">
+<p>Email: mniharika521@gmail.com</p>
+  <p>LinkedIn: linkedin.com/in/niharika-m21</p>
+<p>Location: New Delhi</p>
+</div>
+</section>
+
+<footer>
+© 2026 Niharika ✨ Economist in her main-character era
+</footer>
+
+</body>
+</html>
